@@ -1,0 +1,248 @@
+html{scroll-behavior: smooth;}
+.websiteBody{
+    margin: 0;
+  }.Page{
+    display:block;
+    margin:auto;
+    width:100%;
+    height:auto;
+  }
+  .Page-outer{
+    z-index:1;
+  }
+  .Frame{
+    position:relative;
+    z-index:2;
+    width:100%;
+    margin-left:0;
+    height:955px;
+    min-width:200px;
+    max-width:1512px;
+    margin:auto;
+    background-color:rgba(237, 228, 222, 1);
+    overflow:hidden;
+  }
+  .Frame-outer{
+    z-index:2;
+  }
+  
+  .LUJO{
+    position:relative;
+    z-index:7;
+    margin-left:98px;
+    width:93px;
+    min-width:93px;
+    margin-top:46px;
+    margin-bottom:4727px;
+    min-height:47px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Klee One;
+    font-weight:400;
+    font-size:32px;
+    line-height:46px;
+  }
+  .LUJO-outer{
+    z-index:7;
+    position:relative;
+    display:flex;
+  }
+  .step-1{
+    position:relative;
+    z-index:10;
+    margin-left:100px;
+    width:583px;
+    min-width:583px;
+    margin-top:-4600px;
+    margin-bottom:4300px;
+    min-height:168px;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;
+    font-weight:300;
+    font-size:32px;
+    line-height:55px;
+    opacity: 0.9;
+  }
+  .step-1-outer{
+    z-index:10;
+    display:flex;
+  }
+  .step-2{
+    position:relative;
+    z-index:10;
+    margin-left:200px;
+    width:583px;
+    min-width:583px;
+    margin-top:-4430px;
+    margin-bottom:4300px;
+    min-height:168px;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;
+    font-weight:300;
+    font-size:36px;
+    line-height:55px;
+    opacity: 0.9;
+  }
+  .step-2-outer{
+    z-index:10;
+    display:flex;
+  }
+
+
+  :root {
+    --primary-color: rgba(40, 28, 27, 1);
+    --secondary-color: #818386;
+    --bg-color: rgba(237, 228, 222, 1);
+    --button-color: transparent;
+    --h1-color: rgba(40, 28, 27, 1);
+  }.icons8{
+    position:absolute;
+    z-index:9;
+    margin-left:1512px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width:757px;
+    min-width:757px;
+    height:955px;
+    margin-top: -955px;
+    margin-bottom: -3954px;
+    min-height:955px;
+    content:url(assets/images/icons8-team-y2T5hT7pWx4-unsplash.jpg);
+  }
+  .icons8-outer{
+    justify-content: flex-end;
+    z-index:9;
+    position:relative;
+    display:flex;
+  }
+  
+  form {
+    width: 31.25rem;
+    position: relative;
+    margin-left: 205px;
+    margin-top: -4350px;
+    z-index: 50;
+  }
+  
+input, label {
+    width: 20vw;
+    display: block;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;
+    font-weight:300;
+    font-size:23px;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: var(--primary-color);
+  }
+  
+  input {
+    color: var(--primary-color);
+    font-weight: 500;
+    background: var(--bg-color);
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+    float:none;
+
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: 300;
+    background: var(--button-color);
+    color: var(--bg-color);
+    width: 9rem;
+    height: 2.25rem;
+    border: 1px solid rgba(40, 28, 27, 1);
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;
+    font-weight:300;
+    font-size:23px;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  
+  input:hover, textarea:hover, button:hover {
+    opacity: 0.5;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }
+  input:checked + .slider {
+    background-color: var(--button-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  
+  #error, #success-msg {
+    width: 40vw;
+    margin: 0.125rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: 'Jost';
+    color: var(--secondary-color);
+    }
+  
+  
+    #success-msg {
+    transition-delay: 3s;
+    }
+  
+  @media only screen and (max-width: 950px) {
+    .logo {
+      width: 8rem;
+    }
+   
+    input, button {
+      font-size: 0.65rem;
+    }
+    .description {
+      font-size: 0.3rem;
+      margin-left: 0.4rem;
+    }
+    button {
+      width: 7rem;
+    }
+    
+  }
+  
+  .swal-modal{
+    background-color: white; 
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;
+  }
+  .swal-text{color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;}
+  .swal-button{background-color: #EAFAE6;
+    border-radius: 20px;
+    border: transparent;
+    color:rgba(40, 28, 27, 1);
+    font-style:normal;
+    font-family:Poppins;}
+    .swal-button:hover{
+      background-color: #91E585;
+      }

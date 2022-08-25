@@ -1,0 +1,110 @@
+<!-- Made by: assia rguib -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html prefix="og: http://ogp.me/ns#" lang="en" style="height: 100%">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=5" />
+
+  <title>lujo</title>
+  <meta name="description" content="lujo Description">
+  <meta property="og:title" content="lujo">
+  <meta property="og:description" content="lujo Description">
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Klee+One:400">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/node_modules/sweetalert2.all.min.js"></script>
+
+    </head>
+    <body class="websiteBody">
+    <div
+      id="Page"
+      data-name="Page"
+      class="Page"
+    >
+    
+      <div class="Page-outer">
+    
+      <div class="Frame-outer">
+      <div
+        id="Frame"
+        data-name="MacBook Pro 14" 
+        class="Frame"
+      >
+        <div class="LUJO-outer">
+        <div
+          id="LUJO"
+          data-name="LUJO"
+          class="LUJO"
+        ><div key="0">LUJO</div>
+        </div>
+        </div>
+        <div class="step-1"><div id="step-1"
+    data-name="step 1"
+    class="step-1">
+    <div key="0">Step 4 of 4</div></div></div>
+    <div class="step-2"><div id="selection-1"
+    data-name="selection 1"
+    class="selection-1">
+    <div key="0">Select staff</div></div></div>
+    <form id="contact-form" action=""
+    onsubmit="sendEmail(); reset(); return false;">
+        <label for="name">Full name</label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+        <label for="message">Phone number</label>
+    <input type="text"  name="number" id="number" placeholder="Your Phone Number" required>
+    <button type="submit" id="submit" name="submit" onclick="sweetalertclick()">Confirm</button>
+  </form>
+  <div id="error"></div>
+<div id="success-msg"></div>
+  </div>
+  
+  <div class="icons8-outer">
+    <img
+      id="icons8"
+      data-name="icons8"
+      alt="icons8"
+      class="icons8"
+    />
+    </div>
+</div>
+</div>
+</div>
+<script src='https://smtpjs.com/v3/smtp.js'></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "assia1.rguib@gmail.com",
+      Password : "0123",
+      To : 'assia1.rguib@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "Reservation Confirmation!",
+      Body : "Name: "+ document.getElementById('name').value
+      + "<br> Email: "+ document.getElementById('email').value
+      + "<br> Phone no: "+ document.getElementById('number').value
+}).then(
+  
+function sweetalertclick(){
+  swal({
+  title: "Congratulation!",
+  text: "You reservation was made seccesfully!",
+  icon: "success",
+  button: "See you!",
+});
+}
+);
+
+  }
+</script>
+</body>
+</html>
